@@ -4,6 +4,7 @@ import Header from "../Headers/header";
 import Footer from "../Footers/footer";
 import { useAuth } from "../storage/auth";
 import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
+import ParticlesContainer from "../practice/lab1/particle";
 
 export default function About() {
   const { user } = useAuth();
@@ -129,7 +130,7 @@ export default function About() {
    
 </div>
               </div>
-      <MatrixRainCode className="-z-10"/>
+      <ParticlesContainer className="-z-10"/>
       <Footer />
     </>
   );

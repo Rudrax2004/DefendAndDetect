@@ -7,6 +7,7 @@ import { useAuth } from '../storage/auth';
 import { useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import MatrixRainCode from '../MatrixRainCode/MatrixRainCode';
+import ParticlesContainer from '../practice/lab1/particle';
 
 function Blog() {
   const { blog } = useAuth();
@@ -74,7 +75,7 @@ function Blog() {
             ))}
         </div>
       </section>
-      <MatrixRainCode />
+      <ParticlesContainer />
       <Footer />
     </>
   );

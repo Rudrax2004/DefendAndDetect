@@ -6,7 +6,7 @@ const Learn = () => {
 
   return (
     <>
-     <MatrixRainCode />
+     <ParticlesContainer />
     <Header/>
     <div className="bg-transparent backdrop-blur-md mt-10 grid sm:grid-cols-12 gap-3">
         <div className="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
