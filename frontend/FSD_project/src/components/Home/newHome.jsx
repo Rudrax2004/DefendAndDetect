@@ -4,6 +4,7 @@ import Header from "../Headers/header";
 import Footer from "../Footers/footer";
 import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
 import { motion } from "framer-motion";
+import ParticlesContainer from "../practice/lab1/particle";
 
 const NewHome = () => {
     const [showVideo, setShowVideo] = useState(false);
@@ -48,7 +49,7 @@ const NewHome = () => {
                         </span>
                     </h6>
                 </div>
-                <MatrixRainCode />
+                <ParticlesContainer />
             </div>
             <section id="video-section" className="bg-black mt-60 h-screen flex items-center text-white">
                 <div className="container mx-auto flex flex-col md:flex-row items-center">

@@ -52,7 +52,7 @@ This section provides fundamental knowledge about the functioning of the web. It
 </section>
         </div>
       </div>
-      <MatrixRainCode/>
+      <ParticlesContainer/>
       <Footer />
     </div>
   );

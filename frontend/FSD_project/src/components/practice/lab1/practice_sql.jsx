@@ -7,6 +7,7 @@ import 'react-awesome-button/dist/styles.css';
 import './style.css'
 import ParticlesContainer from './particle';
 import { useNavigate } from 'react-router-dom';
+import MatrixRainCode from '../../MatrixRainCode/MatrixRainCode';
 export const SqlInjection = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const Navigate = useNavigate();
@@ -79,7 +80,7 @@ export const SqlInjection = () => {
       
       <div className='z-[-10]'>
       </div>
-          <ParticlesContainer/>
+          <MatrixRainCode/>
      </div>
   );
 };
