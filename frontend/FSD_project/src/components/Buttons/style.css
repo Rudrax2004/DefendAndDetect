@@ -1,0 +1,33 @@
+.aws-btn {
+    margin: 2px;
+    --button-default-height: 48px;
+    --button-default-font-size: 14px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2.75;
+    --transform-speed: 0.3s;
+    --button-primary-color: #f1d104;
+    --button-primary-color-dark: #bbbd28;
+    --button-primary-color-light: #5c4242;
+    --button-primary-color-hover: #f5e20fec;
+    --button-primary-color-active: #f1d10f;
+    --button-primary-border: 7px solid transparent;
+  }
+  
+  .aws-search {
+    margin-bottom: 2px;
+    --button-default-height: 45px;
+    --button-default-font-size: 13px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding:5px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2.75;
+    --transform-speed: 0.3s;
+    --button-primary-color: #f1d104;
+    --button-primary-color-dark: #bbbd28;
+    --button-primary-color-light: #5c4242;
+    --button-primary-color-hover: #f5e20fec;
+    --button-primary-color-active: #f1d10f;
+  }
+  
