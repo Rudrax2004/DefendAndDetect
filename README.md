@@ -1,4 +1,4 @@
-# Defend & Detect
+# Defend & Detect 🛡️
 
 Defend & Detect is an innovative online platform revolutionizing cybersecurity education. Our mission is to make learning and teaching cybersecurity accessible, interactive, and effective.
 
