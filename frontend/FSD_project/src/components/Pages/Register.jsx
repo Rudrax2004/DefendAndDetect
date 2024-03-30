@@ -169,7 +169,7 @@ function Register() {
             </div>
 </main> 
        </section>
-       <MatrixRainCode/>
+       <ParticlesContainer/>
        </div>
       
     );
