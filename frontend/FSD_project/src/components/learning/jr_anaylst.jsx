@@ -4,6 +4,7 @@ import React from 'react';
 import MatrixRainCode from '../MatrixRainCode/MatrixRainCode';
 import Header from '../Headers/header';
 import Footer from '../Footers/footer';
+import ParticlesContainer from '../practice/lab1/particle';
 
 const JuniorDataSecurityAnalyst = () => {
   return (
@@ -15,7 +16,7 @@ const JuniorDataSecurityAnalyst = () => {
       <p>
         A Junior Data Security Analyst plays a critical role in protecting an organization's data assets and ensuring compliance with security standards and regulations. They work closely with senior analysts and security teams to monitor, analyze, and respond to security threats and incidents.
       </p>
-      <h3>Responsibilities:</h3>
+      <h3 className='text-2xl font-bold py-5 text-green-500'>Responsibilities:</h3>
       <ul>
         <li>Assist in monitoring network and system activities using security tools such as SIEM (Security Information and Event Management) systems.</li>
         <li>Participate in vulnerability assessments and penetration testing to identify and address security vulnerabilities in systems and applications.</li>
@@ -27,7 +28,7 @@ const JuniorDataSecurityAnalyst = () => {
         <li>Collaborate with cross-functional teams including IT, compliance, and legal departments to address security concerns and implement security controls.</li>
       </ul>
       
-      <h3>Skills and Qualifications:</h3>
+      <h3 className='text-2xl font-bold py-5 text-green-500'>Skills and Qualifications:</h3>
       <ul className='py-3' >
         <li className='py-1'>Strong understanding of information security principles, concepts, and best practices.</li>
         <li className='py-1'>Familiarity with operating systems (Windows, Linux), networking protocols, and security technologies.</li>
@@ -38,7 +39,7 @@ const JuniorDataSecurityAnalyst = () => {
         <li className='py-1'>Ability to work well in a team environment, collaborate with colleagues, and contribute to cross-functional projects.</li>
         <li className='py-1'>Relevant certifications such as CompTIA Security+, Certified Information Systems Security Professional (CISSP), or Certified Ethical Hacker (CEH) are advantageous.</li>
       </ul>
-      <MatrixRainCode/>
+      <ParticlesContainer />
     </div>
   </div>
     <Footer/>

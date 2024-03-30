@@ -7,6 +7,7 @@ import Button from '../Buttons/Button';
 import { AwesomeButton } from 'react-awesome-button';
 import { Navigate, useNavigate } from 'react-router-dom';
 import ParticlesContainer from '../practice/lab1/particle';
+import MatrixRainCode from '../MatrixRainCode/MatrixRainCode';
 
 const PhishingIntro = () => {
   const Navigate = useNavigate();

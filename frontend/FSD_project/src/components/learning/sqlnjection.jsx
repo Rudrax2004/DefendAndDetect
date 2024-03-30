@@ -6,6 +6,7 @@ import { Navigate } from "react-router-dom";
 import Button from "../Buttons/Button";
 import AccordionBasicExample from "../practice/accordian";
 import ParticlesContainer from "../practice/lab1/particle";
+import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
 
 export const IntroSql = () => {
   const [password, setPassword] = useState("");

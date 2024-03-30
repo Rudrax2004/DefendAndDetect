@@ -1,6 +1,7 @@
 import Footer from "../Footers/footer"
 import Header from "../Headers/header"
 import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
+import ParticlesContainer from "../practice/lab1/particle";
 const Learn = () => {
 
   return (
@@ -16,7 +17,7 @@ const Learn = () => {
             <div className="aspect-w-10 aspect-h-2 sm:aspect-none rounded-xl overflow-y-visible">
               <img
                 className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
-                src="photos/intro.jpg"
+                src="photos/intro.png"
                 alt="Image Description"
               />
             </div>
@@ -49,7 +50,7 @@ const Learn = () => {
             className="mt-3 group relative block rounded-2xl overflow-hidden dark:focus:outline-none dark:focus:ring-3 dark:focus:ring-gray-200 border-4  hover:border-gray-300 border-gray-500"
             href="/introphishing"
           > <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="photos/phishing.jpg" alt="..." />
+            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="photos/phishing.png" alt="..." />
           </div>
           <div className="absolute bottom-0 start-0 end-0 p-2 ">
             <div className=" font-mono font-bold  text-2xl text-white rounded-lg p-3  bg-transparent backdrop-blur-sm backdrop-brightness-90">
@@ -70,7 +71,7 @@ const Learn = () => {
     <div className="aspect-w-16 aspect-h-1 sm:aspect-none focus:ring-white font-medium rounded-xl overflow-hidden">
       <img
         className="mb-2 group-hover:scale-105 transition-transform duration-500 focus:ring-white font-medium ease-in-out rounded-xl w-full object-cover"
-        src="photos/sql_injection.jpg"
+        src="photos/sql_injection.png"
       />
     </div>
     <div className="absolute bottom-0 start-0 end-0 p-2">
@@ -89,7 +90,7 @@ const Learn = () => {
             className="mt-3 group relative block rounded-2xl overflow-hidden dark:focus:outline-none dark:focus:ring-3 dark:focus:ring-gray-200 border-4  hover:border-gray-300 border-gray-500"
             href="/introjr"
           >  <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="photos/sjr.jpg" alt="..." />
+            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="photos/sjr.png" alt="..." />
           </div>
           <div className="absolute bottom-0 start-0 end-0 p-2">
           <div className=" font-mono font-bold  text-2xl text-white rounded-lg p-3  bg-transparent backdrop-blur-md backdrop-brightness-90">

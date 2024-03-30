@@ -1,11 +1,12 @@
 import Footer from "../Footers/footer"
 import Header from "../Headers/header"
 import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
+import ParticlesContainer from "../practice/lab1/particle";
 const Labs = () => {
 
   return (
     <>
-     <MatrixRainCode />
+     <ParticlesContainer />
     <Header/>
     <div className="bg-transparent backdrop-blur-md mt-10 grid sm:grid-cols-12 gap-3">
       <div className="col-span-12 md:col-span-4">
@@ -31,7 +32,7 @@ const Labs = () => {
           </div>
           <div className="absolute bottom-0 start-0 end-0 p-2">
             <div className="font-mono font-bold text-2xl text-white rounded-lg p-3 bg-transparent backdrop-blur-lg backdrop-brightness-75">
-              Phishing Lab
+              XSS Lab
             </div>
           </div>
         </a>
