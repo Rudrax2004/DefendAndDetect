@@ -28,7 +28,7 @@ const Labs = () => {
             className="mt-3 group relative block rounded-2xl overflow-hidden dark:focus:outline-none dark:focus:ring-3 dark:focus:ring-gray-200 border-4  hover:border-gray-300 border-gray-500"
             href="/phishing"
           >   <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="/photos/plab.png" alt="..." />
+            <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="/photos/xss.webp" alt="..." />
           </div>
           <div className="absolute bottom-0 start-0 end-0 p-2">
             <div className="font-mono font-bold text-2xl text-white rounded-lg p-3 bg-transparent backdrop-blur-lg backdrop-brightness-75">
