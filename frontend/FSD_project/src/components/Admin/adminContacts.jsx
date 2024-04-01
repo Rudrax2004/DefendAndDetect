@@ -17,7 +17,7 @@ export const AdminContacts = () => {
 
     const getAllUserData = async () => {
         try {
-            const Response = await fetch('http://localhost:5000/api/admin/contacts', {
+            const Response = await fetch('https://defendanddetect-production.up.railway.app/api/admin/contacts', {
                 method: "GET",
                 headers: {
                     "Authorization": TokenAuthorization,

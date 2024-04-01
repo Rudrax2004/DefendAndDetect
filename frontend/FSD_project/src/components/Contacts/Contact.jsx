@@ -49,7 +49,7 @@ export default function Contact() {
         // console.log(user);
         // alert(JSON.stringify(us er, null, 2));
         try {
-            const Response = await fetch('http://localhost:5000/api/form/contact', {
+            const Response = await fetch('https://defendanddetect-production.up.railway.app/api/form/contact', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

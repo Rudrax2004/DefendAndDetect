@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
   const getSingleData = async () => {
     try {
-      const Response = await fetch(`http://localhost:5000/api/admin/users/${userId}`, {
+      const Response = await fetch(`https://defendanddetect-production.up.railway.app/api/admin/users/${userId}`, {
         method: "GET",
         headers: {
           Authorization: TokenAuthorization,
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   
   const useAuthentication = async () => {
     try {
-      const Response = await fetch("http://localhost:5000/api/auth/user", {
+      const Response = await fetch("https://defendanddetect-production.up.railway.app/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: TokenAuthorization,
@@ -69,7 +69,7 @@ export const AuthProvider = ({ children }) => {
 
   const getBlogs = async () => {
     try {
-      const Response = await fetch("http://localhost:5000/api/auth/blog", {
+      const Response = await fetch("https://defendanddetect-production.up.railway.app/api/auth/blog", {
         method: "GET",
       });
 
