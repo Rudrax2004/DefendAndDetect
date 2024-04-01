@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start:all": "concurrently \"node server.js\" \"npm run start\" \"npm run start:attacker\" \"npm run start:reviews\""
   }
 }
