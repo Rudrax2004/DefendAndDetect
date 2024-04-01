@@ -17,7 +17,7 @@ export const AdminUsers = () => {
 
     const getAllUserData = async () => {
         try {
-            const Response = await fetch('http://localhost:5000/api/admin/users', {
+            const Response = await fetch('https://defendanddetect-production.up.railway.app/api/admin/users', {
                 method: "GET",
                 headers: {
                     "Authorization": TokenAuthorization,
@@ -39,7 +39,7 @@ export const AdminUsers = () => {
    const deleteUser = async (id) => {
        try {
            console.log(`user id :${id}`);
-           const Response = await fetch(`http://localhost:5000/api/admin/users/delete/${id}`, {
+           const Response = await fetch(`https://defendanddetect-production.up.railway.app/api/admin/users/delete/${id}`, {
                method: "DELETE",
                headers: { 
                    "Authorization": TokenAuthorization,

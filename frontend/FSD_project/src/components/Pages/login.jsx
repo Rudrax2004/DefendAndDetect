@@ -41,7 +41,7 @@ function Login(){
         e.preventDefault();//// Prevent the default form submission behavior
         // console.log(user);
         try {
-                const Response = await fetch("http://localhost:5000/api/auth/login", {
+                const Response = await fetch("https://defendanddetect-production.up.railway.app/api/auth/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -154,7 +154,7 @@ function Login(){
                                     <div className="mt-4 text-center">
                                         <p className="text-sm text-gray-600">
                                             Don't have an account?{" "}
-                                            <a href="http://localhost:5173/register" className="font-bold text-blue-600 no-underline hover:text-blue-400">
+                                            <a href="https://defend-and-detect.vercel.app/register" className="font-bold text-blue-600 no-underline hover:text-blue-400">
                                                 Sign up
                                             </a>
                                         </p>

@@ -22,7 +22,7 @@ const AccordionBasicExample = ({ index }) => {
 
   const getAllFyqs = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/fyq/labs', {
+      const response = await fetch('https://defendanddetect-production.up.railway.app/api/fyq/labs', {
         method: "GET",
         headers: {
           "Authorization": TokenAuthorization,

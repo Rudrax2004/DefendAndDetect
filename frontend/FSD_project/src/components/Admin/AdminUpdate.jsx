@@ -20,7 +20,7 @@ export default function AdminUpdate() {
         // Fetch user data based on the ID from the backend
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:5000/api/admin/users/${userid}`, {
+            const response = await axios.get(`https://defendanddetect-production.up.railway.app/api/admin/users/${userid}`, {
               headers: {
                 Authorization: TokenAuthorization,
               },
@@ -58,7 +58,7 @@ export default function AdminUpdate() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch(`http://localhost:5000/api/admin/users/update/${userid}`, {
+        const response = await fetch(`https://defendanddetect-production.up.railway.app/api/admin/users/update/${userid}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

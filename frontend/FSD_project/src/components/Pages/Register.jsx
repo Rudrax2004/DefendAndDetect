@@ -34,7 +34,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const Response = await fetch('http://localhost:5000/api/auth/register', {
+            const Response = await fetch('https://defendanddetect-production.up.railway.app/api/auth/register', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -161,7 +161,7 @@ function Register() {
                                 <input className="mt-4 w-full cursor-pointer rounded-lg bg-blue-600 pt-3 pb-3 text-white shadow-lg hover:bg-blue-400" type="submit" value="Create account" />
                             </form>
                             <div className="mt-4 text-center">
-                                <p className="text-sm text-gray-600">Already have an account? <a href="http://localhost:5173/login" className="font-bold text-blue-600 no-underline hover:text-blue-400">Sign in</a></p>
+                                <p className="text-sm text-gray-600">Already have an account? <a href="https://defend-and-detect.vercel.app/login" className="font-bold text-blue-600 no-underline hover:text-blue-400">Sign in</a></p>
                             </div>
                         </div>
                     </div>
