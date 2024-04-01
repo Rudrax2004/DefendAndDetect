@@ -14,11 +14,12 @@ const adminRouter = require("./Router/admin-router");
 const errorMiddleware = require("./middlerwares/error-middleware");
 //handle cors...
 var corsOptions = {
-    origin : "https://defend-and-detect.vercel.app/introphishing",
-    methods : "GET,POST,PUT,DELETE,HEAD,PATCH",
+    origin : "*",
+    methods : ["GET", "POST", "PUT", "DELETE", "HEAD", "PATCH"], // Modified to an array of strings
     credentials : true,
-};
-app.use(cors(corsOptions));
+}; // Modified to allow access to all URLs in the frontend
+
+app.use(corsOptions);
 
 
 app.use(express.json());
