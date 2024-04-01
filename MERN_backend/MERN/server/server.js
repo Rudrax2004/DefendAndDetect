@@ -19,7 +19,7 @@ var corsOptions = {
     credentials : true,
 }; // Modified to allow access to all URLs in the frontend
 
-app.use(corsOptions);
+app.use(cors(corsOptions));
 
 
 app.use(express.json());
