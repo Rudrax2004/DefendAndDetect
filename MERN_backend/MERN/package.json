@@ -3,6 +3,6 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "start": "concurrently \"node server.js\" \"npm run start\" \"npm run start:attacker\" \"npm run start:reviews\""
+    "start": "concurrently \"node server.js\" \"npm run start:all\""
   }
 }
