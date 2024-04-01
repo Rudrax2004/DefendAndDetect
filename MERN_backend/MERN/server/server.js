@@ -14,7 +14,7 @@ const adminRouter = require("./Router/admin-router");
 const errorMiddleware = require("./middlerwares/error-middleware");
 //handle cors...
 var corsOptions = {
-    origin : "https://defend-and-detect.vercel.app/",
+    origin : "https://defend-and-detect.vercel.app/introphishing",
     methods : "GET,POST,PUT,DELETE,HEAD,PATCH",
     credentials : true,
 };
