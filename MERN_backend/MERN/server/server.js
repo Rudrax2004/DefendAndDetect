@@ -14,7 +14,7 @@ const adminRouter = require("./Router/admin-router");
 const errorMiddleware = require("./middlerwares/error-middleware");
 //handle cors...
 var corsOptions = {
-    origin : "https://defend-and-detect.vercel.app/blog,https://defend-and-detect.vercel.app/about,https://defend-and-detect.vercel.app/contact,https://defend-and-detect.vercel.app/login,https://defend-and-detect.vercel.app/register,https://defend-and-detect.vercel.app/,https://defend-and-detect.vercel.app/learn,https://defend-and-detect.vercel.app/labs,https://defend-and-detect.vercel.app/lab1,https://defend-and-detect.vercel.app/phishing,https://defend-and-detect.vercel.app/introphishing,https://defend-and-detect.vercel.app/introsql,https://defend-and-detect.vercel.app/intro,https://defend-and-detect.vercel.app/webfunda,https://defend-and-detect.vercel.app/introjr",
+    origin : "https://defend-and-detect.vercel.app/",
     methods : "GET,POST,PUT,DELETE,HEAD,PATCH",
     credentials : true,
 };
