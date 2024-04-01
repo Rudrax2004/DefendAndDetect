@@ -107,15 +107,15 @@ app.use(errorMiddleware);
 
 
 app.get("/",(req,res)=>{
-     res.status(200).send("best series");
+         res.status(200).send("best series");
  });
 
  const PORT = 5000;
-   connectDb().then(()=>{
-        app.listen(PORT,()=>{ //to run server ..
-        console.log(server is running on :${PORT});
+     connectDb().then(()=>{
+                app.listen(PORT,()=>{ //to run server ..
+                console.log(`server is running on :${PORT}`);
+                })
         })
-    })
 
 
 /*: This line of code adds Express middleware that parses
