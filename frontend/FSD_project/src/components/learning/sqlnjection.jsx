@@ -56,7 +56,7 @@ export const IntroSql = () => {
   return (
     <div className="container bg-black text-zinc-300 mx-auto p-4">
       <h2 className="text-2xl text-yellow-500 font-bold mb-4">SQL Code Injection</h2>
-      <p className="text-xl">
+      {/* <p className="text-xl">
         SQL (Structured Query Language) is a standard programming language for managing and
         manipulating relational databases. It is widely used for tasks such as querying data,
         updating records, and database management.
@@ -78,7 +78,7 @@ export const IntroSql = () => {
       <p className="mt-2 text-xl">
     SQL (Structured Query Language) is a powerful tool for managing and manipulating databases.
     Below are some basic SQL queries that you can use for educational purposes:
-  </p>
+  </p> */}
             <img className="container z-50" src="/photos/image.png" alt="..." />
  <p className="mt-4  text-xl">
         This is a demonstration of a SQL injection in a simple login application.
