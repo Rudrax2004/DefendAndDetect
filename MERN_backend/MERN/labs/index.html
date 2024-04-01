@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Scanner</title>
+</head>
+<body>
+    <input type="file" id="file-input">
+    <button id="scan-button">Scan</button>
+    <div id="scan-results"></div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+
+        // Get the API key from the main process
+        const API_KEY = ipcRenderer.sendSync('get-api-key');
+
+        // Listen for scan results from the main process
+        ipcRenderer.on('scan-results', (event, scans) => {
+            const resultsContainer = document.getElementById('scan-results');
+            resultsContainer.innerHTML = '<h2>Scan Results:</h2>';
+            for (const scanner in scans) {
+                resultsContainer.innerHTML += `<p>${scanner}: ${scans[scanner].result}</p>`;
+            }
+        });
+
+        // Scan file when button is clicked
+        document.getElementById('scan-button').addEventListener('click', () => {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+            if (file) {
+                ipcRenderer.send('scan-file', file.path);
+            } else {
+                alert('Please select a file.');
+            }
+        });
+    </script>
+</body>
+</html>

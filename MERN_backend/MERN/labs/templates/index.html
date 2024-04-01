@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/tacit-css.min.css">
+  <title>The Vulnerable Movie Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    hr.thin {
+      margin: 10px 0;
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+    }
+    form#search-form {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    input#keyword {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button.thin {
+      padding: 8px 12px;
+      border: 1px solid #3498db;
+      border-radius: 4px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+    button.thin:hover {
+      background-color: #2980b9;
+    }
+    section#search-result {
+      display: none;
+      margin-bottom: 20px;
+    }
+    section#movie-data {
+      display: flex;
+      align-items: center;
+    }
+    img#playbill {
+      margin-right: 20px;
+      max-width: 150px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    div#movie-details {
+      width: 60%;
+    }
+    button#play-button {
+      padding: 10px 20px;
+      background-color: #27ae60;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button#play-button:hover {
+      background-color: #219653;
+    }
+    form textarea[name="newReview"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    form button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <script>
+    function search() {
+      const searchResult = document.getElementById("search-result");
+      const searchTerm = document.getElementById("search-term");
+      const keyword = document.getElementById("keyword");
+
+      const movieData = document.getElementById("movie-data");
+      const comments = document.getElementById("comments");
+
+      movieData.style.visibility = "hidden";
+      comments.style.visibility = "hidden";
+
+      searchResult.style.display = "block";
+
+      searchTerm.innerHTML = keyword.value;
+
+      // Fetching results related to the keyword value from the server
+
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <h1>The Vulnerable Movie Center</h1>
+    <hr class="thin">
+    <form id="search-form" onsubmit="return search()">
+      <input id="keyword" type="text" class="thin" placeholder="Search a movie">
+      <button type="submit" class="thin">Go</button>
+    </form>
+    <hr class="thin">
+  </section>
+
+  <section id="search-result">
+    You searched for <span id="search-term"></span>
+    <p>Waiting for server's response...</p>
+  </section>
+
+  <section id="movie-data">
+    <img id="playbill" src="images/life-of-pi-movie.jpeg" alt="Movie Poster">
+    <div id="movie-details">
+      <b>Title:</b> Life of Pi<br>
+      <b>Year:</b> 2012<br>
+      <b>Directed by:</b> Ang Lee<br>
+      <b>Starring:</b> Suraj Sharma, Irrfan Khan, Gerard Depardieu<br>
+      <b>Duration:</b> 127 min.<br><br>
+      <b>Plot:</b>
+      <p>
+        Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere.
+        His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
+      </p>
+      <button id="play-button" type="submit">Play</button>
+    </div>
+  </section>
+
+  <section id="comments">
+    <form>
+      <fieldset>
+        <textarea name="newReview" cols="80" rows="5" placeholder="Add your review"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <hr class="thin">
+    <h2>Comments</h2>
+    <dl>
+      $reviews$        
+    </dl>
+  </section>
+</body>
+</html>
