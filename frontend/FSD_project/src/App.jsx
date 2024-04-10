@@ -35,31 +35,142 @@ function App() {
     <>
       <Router>
       <Routes>
-        <Route exact path='/' element={<NewHome/>}/>
-        <Route exact path="/register" element={<Register />} />
-        <Route exact path="/login" element={<Login/>}/>
-        <Route exact path="/blog" element={<Blog/>}/>
-        <Route exact path="/logout" element={<Logout/>} />
-        <Route exact path='/about' element={<About/>}/>
-        <Route exact path='/update/:userid' element={<AdminUpdate/>}/>
-        <Route exact path='/contact' element={<Contact/>}/>
-        <Route exact path="/intro" element={<Intro/>} />
-        <Route exact path='/learn' element={<Learn/>}/>
-        <Route exact path="/webfunda" element={<WebFundamentals/>} />
-        <Route exact path='/learn' element={<Learn/>}/>
-        <Route exact path='/lab1' element={<SqlInjection/>}/>
-        <Route exact path='/introsql' element={<IntroSql/>}/>
-        <Route exact path='/introphishing' element={<PhishingIntro/>}/>
-        <Route exact path='/introjr' element={<JuniorDataSecurityAnalyst/>}/>
-        <Route exact path='/phishing' element={<MovieCenter/>}/>
+      <Route exact path='/' 
+        render={() => 
+        <div>
+          <NewHome/>
+        </div> 
+        } />
+        <Route exact path='/register' 
+        render={() => 
+        <div>
+          <Register/>
+        </div> 
+        } />
+        <Route exact path='/login' 
+        render={() => 
+        <div>
+          <Login/>
+        </div> 
+        } />
+        <Route exact path='/blog' 
+        render={() => 
+        <div>
+          <Blog/>
+        </div> 
+        } />
+        <Route exact path='/logout' 
+        render={() => 
+        <div>
+          <Logout/>
+        </div> 
+        } />
+        <Route exact path='/about' 
+        render={() => 
+        <div>
+          <About/>
+        </div> 
+        } />
+        <Route exact path='/update/:userid' 
+        render={() => 
+        <div>
+          <AdminUpdate/>
+        </div> 
+        } />
+        <Route exact path='/contact' 
+        render={() => 
+        <div>
+          <Contact/>
+        </div> 
+        } />
+        <Route exact path='/Intro' 
+        render={() => 
+        <div>
+          <Intro/>
+        </div> 
+        } />
+        <Route exact path='/learn' 
+        render={() => 
+        <div>
+          <Learn/>
+        </div> 
+        } />
+        <Route exact path='/webfunda' 
+        render={() => 
+        <div>
+          <WebFundamentals/>
+        </div> 
+        } />
+        <Route exact path='/lab1' 
+        render={() => 
+        <div>
+          <SqlInjection/>
+        </div> 
+        } />
+        <Route exact path='/introsql' 
+        render={() => 
+        <div>
+          <IntroSql/>
+        </div> 
+        } />
+        <Route exact path='/introphishing' 
+        render={() => 
+        <div>
+          <PhishingIntro/>
+        </div> 
+        } />
+        <Route exact path='/introjr' 
+        render={() => 
+        <div>
+          <JuniorDataSecurityAnalyst/>
+        </div> 
+        } />
+        <Route exact path='/phishing' 
+        render={() => 
+        <div>
+          <MovieCenter/>
+        </div> 
+        } />
+        <Route exact path='/labs' 
+        render={() => 
+        <div>
+          <Labs />
+        </div> 
+        } />
+        <Route exact path='/user/:userid' 
+        render={() => 
+        <div>
+          <User/>
+        </div> 
+        } />
+        
         {/* <Route exact path='/emailSpoofing' element={<EmailSpoofing/>}/> */}
-        <Route exact path='/labs' element={<Labs/>}/>
-        <Route  exact path='/user/:userid' element={<User/>}/>{/*here user:__userid__ gives access in url and that __userid__ is drectly access in  User.jsx file with same name  */}   
+        {/*here user:__userid__ gives access in url and that __userid__ is drectly access in  User.jsx file with same name  */}   
      
-    <Route exact path='/admin' element={<Admin/>}>
-      <Route exact path='users' element={<AdminUsers/>}/>
-      <Route exact path='blogs' element={<AdminBlog/>}/>
-      <Route exact path='contacts' element={<AdminContacts/>}/>
+        <Route exact path='/admin' 
+        render={() => 
+        <div>
+          <Admin/>
+        </div> 
+        }>
+        <Route exact path='users' 
+        render={() => 
+        <div>
+          <AdminUsers/>
+        </div> 
+        } />
+        <Route exact path='blogs' 
+        render={() => 
+        <div>
+          <AdminBlog/>
+        </div> 
+        } />
+        <Route exact path='contacts' 
+        render={() => 
+        <div>
+          <AdminContacts />
+        </div> 
+        } />    
     </Route>
       </Routes>
       </Router>
