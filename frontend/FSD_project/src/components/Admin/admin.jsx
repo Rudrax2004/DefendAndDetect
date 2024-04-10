@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { FaHome, FaRegListAlt, FaUser } from 'react-icons/fa';
+import { FaHome,FaAddressBook, FaUser } from 'react-icons/fa';
 import { NavLink,Outlet, useLocation, useNavigate } from 'react-router-dom';
-import Footer from '../Footers/footer';
-import MatrixRainCode from '../MatrixRainCode/MatrixRainCode'
 import { useEffect, useState } from 'react';
 export const Admin = () => {
     
@@ -20,7 +18,6 @@ export const Admin = () => {
 
     return (
         <div className="w-full h-screen">
-            <div >
                 <div className=" container flex h-screen bg-slate-700 rounded-lg">
             <div className="w-64 bg-gradient-to-b from-gray-500 to-gray-900 rounded-lg p-4 shadow-md h-full">
                 <div className="text-white rounded-lg  bg-gray-600 pb-1 text-center font-extrabold text-2xl mb-4"
@@ -32,13 +29,13 @@ export const Admin = () => {
                         </NavLink>
                     </li>
                      <li>
-                        <NavLink to={"/"} className="text-white flex items-center space-x-2 py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                            <FaHome className="text-xl" /> <span>Home</span>
+                        <NavLink to={"contacts"} className="text-white flex items-center space-x-2 py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                            <FaAddressBook className="text-xl" /> <span>Contacts</span>
                         </NavLink>
                     </li>
                      <li>
-                        <NavLink to={"contacts"} className="text-white flex items-center space-x-2 py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
-                            <FaHome className="text-xl" /> <span>Contacts</span>
+                        <NavLink to={"/"} className="text-white flex items-center space-x-2 py-2 px-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                            <FaHome className="text-xl" /> <span>Home</span>
                         </NavLink>
                     </li>
                 </ul>
@@ -46,7 +43,6 @@ export const Admin = () => {
             <div className="flex-1  bg-gray-400 bg-opacity-75 rounded-lg p-4 h-full">
                 <Outlet />
             </div>
-        </div>
         </div>
         </div>
     );
