@@ -82,7 +82,7 @@ const AccordionBasicExample = ({ index }) => {
               show={activeElements.includes(fyq._id)}
               className="!mt-0 !rounded-b-none rounded-lg border border-gray-100 !shadow-none"
             >
-              <div className="rounded-lg border border-gray-100 text-zinc-300 font-medium px-5 py-4">{fyq.answer}</div>
+              <div className="rounded-lg border border-gray-100 text-zinc-300 font-medium px-5 py-4 style={{ textAlign: 'left' }}">{fyq.answer}</div>
             </TECollapse>
           </div>
         </div>
