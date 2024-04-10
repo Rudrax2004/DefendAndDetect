@@ -84,6 +84,7 @@ export const IntroSql = () => {
         This is a demonstration of a SQL injection in a simple login application.
         In our example, a database has been provisioned with an admin user.
         Their credentials are:
+
       </p>
 
       <div className="mt-4">
@@ -124,6 +125,7 @@ export const IntroSql = () => {
 
       <p className="text-xl" style={{textAlign:'left'}}>
       In theory it should only be possible to login in the application using this credential, but if the application is not safely programmed, it is possible to penetrate in the system as an admin user without knowing the admin password.
+      
       </p>
 
       <div className="mt-4">
@@ -165,6 +167,7 @@ export const IntroSql = () => {
       <p className="mt-4 text-xl" style={{textAlign:'left'}}>
         Once you have played with the login application, try the following values
         and observe the SQL query displayed in the log section.
+
       </p>
        <Button/>
        <p className="text-2xl text-yellow-500 font-bold mt-4">for more information check out below video!!</p>
@@ -172,7 +175,9 @@ export const IntroSql = () => {
   <video  controls>
     <source src="/photos/sql.mp4" type="video/mp4" />
   </video>
-  <p className="text-2xl text-yellow-500 font-bold mt-4">If you intrested then ,click to  start above lab!!</p>  
+  <p className="text-2xl text-yellow-500 font-bold mt-4">If you intrested then ,click to  start above lab!!
+  
+  </p>  
   <AwesomeButton
             onPress={openWebPage}
             type="primary"
