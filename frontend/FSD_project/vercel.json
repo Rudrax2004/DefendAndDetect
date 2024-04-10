@@ -1,0 +1,80 @@
+{
+    "routes": [
+        {
+            "src" :"/" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/register" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/login" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/logout" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/blog" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/about" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/update/:userid" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/contact" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/intro" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/learn" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/webfunda" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/lab1" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/introsql" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/introphishing" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/introjr" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/phishing" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/labs" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/user/:userid" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/admin" ,
+            "dest":"/"
+        }
+    ]
+}
