@@ -75,6 +75,18 @@
         {
             "src" :"/admin" ,
             "dest":"/"
+        },
+        {
+            "src" :"/admin/users" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/admin/blogs" ,
+            "dest":"/"
+        },
+        {
+            "src" :"/admin/contacts" ,
+            "dest":"/"
         }
     ]
 }
