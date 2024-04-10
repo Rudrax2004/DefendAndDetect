@@ -53,7 +53,7 @@ const AccordionBasicExample = ({ index }) => {
           <div className="rounded-[10px] mb-2 mt-2 border border-neutral-200 dark:border-neutral-500">
             <h2 className="mb-0" id={`heading${fyq._id}`}>
               <button
-                className={`bg-primary font-bold text-zinc-300 group relative flex items-center rounded-t-[5px] border-0 w-full h-full px-5 py-4 text-left text-base transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring focus:border-primary focus:bg-blue-700 ${activeElements.includes(fyq._id) ? 'bg-blue-700' : ''}`}
+                className={`bg-primary font-bold text-zinc-300 group relative flex items-left rounded-t-[5px] border-0 w-full h-full px-5 py-4 text-left text-base transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring focus:border-primary focus:bg-blue-700 ${activeElements.includes(fyq._id) ? 'bg-blue-700' : ''}`}
                 type="button"
                 onClick={() => handleClick(fyq._id)}
                 aria-expanded="true"
