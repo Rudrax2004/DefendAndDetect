@@ -167,7 +167,6 @@ export const IntroSql = () => {
       <p className="mt-4 text-xl" style={{textAlign:'left'}}>
         Once you have played with the login application, try the following values
         and observe the SQL query displayed in the log section.
-
       </p>
        <Button/>
        <p className="text-2xl text-yellow-500 font-bold mt-4">for more information check out below video!!</p>
