@@ -15,7 +15,7 @@ function Logout(){
     console.log("Logout useEffect - After logoutUser");
   }, [logoutUser]);
 
-  return  <Navigate to="/login"/>;
+  return  <Navigate to="/newHome"/>;
 }
 
 export default Logout;
