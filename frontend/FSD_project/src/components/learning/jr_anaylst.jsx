@@ -13,11 +13,11 @@ const JuniorDataSecurityAnalyst = () => {
     <Header/>
     <div className="text-gray-300 ">
       <h2 className='text-3xl font-bold py-5 text-yellow-500'>Junior Data Security Analyst</h2>
-      <p>
+      <p style={{textAlign:'left'}}>
         A Junior Data Security Analyst plays a critical role in protecting an organization's data assets and ensuring compliance with security standards and regulations. They work closely with senior analysts and security teams to monitor, analyze, and respond to security threats and incidents.
       </p>
       <h3 className='text-2xl font-bold py-5 text-green-500'>Responsibilities:</h3>
-      <ul>
+      <ul style={{textAlign:'left'}}>
         <li>Assist in monitoring network and system activities using security tools such as SIEM (Security Information and Event Management) systems.</li>
         <li>Participate in vulnerability assessments and penetration testing to identify and address security vulnerabilities in systems and applications.</li>
         <li>Support incident response efforts by analyzing security incidents, containing breaches, and implementing corrective measures.</li>
@@ -29,7 +29,7 @@ const JuniorDataSecurityAnalyst = () => {
       </ul>
       
       <h3 className='text-2xl font-bold py-5 text-green-500'>Skills and Qualifications:</h3>
-      <ul className='py-3' >
+      <ul className='py-3' style={{textAlign:'left'}} >
         <li className='py-1'>Strong understanding of information security principles, concepts, and best practices.</li>
         <li className='py-1'>Familiarity with operating systems (Windows, Linux), networking protocols, and security technologies.</li>
         <li className='py-1'>Proficiency in security tools such as vulnerability scanners (Nessus, Qualys), intrusion detection systems (Snort), and SIEM platforms (Splunk, ELK).</li>
