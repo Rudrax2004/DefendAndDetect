@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
-// WebFundamentalsPage.jsx
 import React from 'react';
-import Footer from '../Footers/footer';
-import Header from '../Headers/header';
-import ParticlesContainer from "../practice/lab1/particle";
-import MatrixRainCode from '../MatrixRainCode/MatrixRainCode';
-const WebFundamentals = () => {
+import Footer from "../Footers/footer";
+import Header from "../Headers/header";
+import MatrixRainCode from "../MatrixRainCode/MatrixRainCode";
+import AccordionBasicExample from '../practice/accordian';
+import ParticlesContainer from '../practice/lab1/particle';
+
+export const WebFundamentals = () => {
+
   return (
-    <div >
+    <>
       <Header />
       <ParticlesContainer />
       <div className="relative mt-8 container bg-black mx-auto group rounded-2xl overflow-hidden border-4 border-gray-500">
@@ -19,9 +21,6 @@ const WebFundamentals = () => {
         </div>
       </div>
       <Footer />
-      </div>
+    </>
   );
 };
-
-export default WebFundamentals;
-
