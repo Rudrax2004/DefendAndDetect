@@ -33,7 +33,7 @@ const AccordionBasicExample = ({ index }) => {
       await setFyqs(data.labs[index].fyqs); // Set the fyqs array of the first lab in state
       if (data.labs[index].fyqs.length > 0) {
         // Open the first accordion item by default
-        setActiveElements([data.labs[index].fyqs[0]._id]);
+        //setActiveElements([data.labs[index].fyqs[0]._id]);
       }
     } catch (error) {
       console.log("Failed to get data: ", error);
