@@ -40,13 +40,13 @@ export default function About() {
                 Hello ,
                 <label className="text-4xl text-cyan-600 font-bold md:text-5xl"> {user.username} </label>
                 <br />
-                About CyberLearn
+                About Defend & Detect
               </h2>
               <br />
               <h2 className="text-2xl text-gray-200 font-bold md:text-4xl">Empowering Minds, Defending Futures</h2>
               <p className="mt-6 text-gray-200">
                 your go-to destination for learning and raising awareness about cybersecurity. In an age where digital threats loom large, knowledge is your best defense.
-                At CyberLearn, we are on a mission to equip individuals with the skills and awareness needed to navigate the digital landscape securely.
+                At Defend & Detect, we are on a mission to equip individuals with the skills and awareness needed to navigate the digital landscape securely.
               </p>
               <p className="mt-4 text-gray-200"></p>
             </div>
