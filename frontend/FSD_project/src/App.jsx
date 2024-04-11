@@ -25,7 +25,7 @@ import { IntroSql } from './components/learning/sqlnjection.jsx';
 import { WebFundamentals } from './components/learning/webfundamental.jsx';
 import MovieCenter from './components/practice/xss-Movie.jsx';
 import PhishingIntro from './components/learning/phishing.jsx';
-import JuniorDataSecurityAnalyst from './components/learning/jr_anaylst.jsx';
+import { JuniorDataSecurityAnalyst } from './components/learning/jr_anaylst.jsx';
 import EmailSpoofing from './components/practice/lab1/email_spoofing.jsx';
 
 function App() {
