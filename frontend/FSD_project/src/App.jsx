@@ -22,7 +22,7 @@ import Labs  from './components/learning/labs.jsx';
 import { Intro } from './components/learning/intro.jsx';
 import {SqlInjection} from "./components/practice/lab1/practice_sql.jsx";
 import { IntroSql } from './components/learning/sqlnjection.jsx';
-import WebFundamentals from './components/learning/webfundamental.jsx';
+import { WebFundamentals } from './components/learning/webfundamental.jsx';
 import MovieCenter from './components/practice/xss-Movie.jsx';
 import PhishingIntro from './components/learning/phishing.jsx';
 import JuniorDataSecurityAnalyst from './components/learning/jr_anaylst.jsx';
