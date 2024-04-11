@@ -16,7 +16,7 @@ const JuniorDataSecurityAnalyst = () => {
         <div className="bg-opacity-70 bg-gray-800 p-8">
           <h1 className="text-3xl font-bold text-yellow-600 mb-8">Junior Security Analyst</h1>
 
-            <AccordionBasicExample index={2}/>
+            <AccordionBasicExample index={3}/>
         </div>
       </div>
       <Footer />  </>
