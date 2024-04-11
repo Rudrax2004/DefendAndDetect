@@ -128,7 +128,9 @@ export default function About() {
   </ul>
   
 </header>
-   
+<video  controls>
+    <source src="/photos/sql.mp4" type="video/mp4" />
+  </video>
 </div>
               </div>
       <ParticlesContainer className="-z-10"/>
